@@ -1,0 +1,12 @@
+{
+  "name": "react-tp5-backend",
+  "version": "1.0.0",
+  "description": "Proyecto Backend de Lista de Tareas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Capdevila Lucas",
+  "license": "ISC"
+}
