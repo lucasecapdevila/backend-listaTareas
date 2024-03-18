@@ -4,6 +4,7 @@ import cors from 'cors'
 import morgan from 'morgan'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import tareasRouter from './src/routes/tareas.routes.js'
 
 const app = express()
 app.set('port', process.env.PORT || 4000)
@@ -19,6 +20,8 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 app.use(express.static(path.join(__dirname, '/public')))
+
+app.use('/api', tareasRouter)
 
 app.get('/', (req, res) => {
   console.log('Procesando la solicitud');
