@@ -8,3 +8,7 @@ const tareaSchema = new Schema({
     maxLength: 75
   }
 })
+
+const Tarea = mongoose.model('tarea', tareaSchema)
+
+export default Tarea
