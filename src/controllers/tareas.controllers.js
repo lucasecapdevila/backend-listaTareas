@@ -67,3 +67,23 @@ export const eliminarTarea = async(req, res) => {
     })
   }
 }
+
+export const eliminarTodasLasTareas = async(req, res) => {
+  try {
+    const listaTareasBuscadas = await Tarea.find()
+    if(!listaTareasBuscadas){
+      return res.status(404).json({
+        mensaje: 'No se pudo eliminar la lista de tareas.'
+      })
+    }
+    await Tarea.deleteMany()
+    res.status(200).json({
+      mensaje: 'La lista de tareas se eliminó exitosamente.'
+    })
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      mensaje: 'Ocurrió un error. No se pudo eliminar la lista de tareas.'
+    })
+  }
+}
