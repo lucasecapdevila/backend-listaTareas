@@ -15,15 +15,17 @@ necesaria con MongoDB.
 Unir el proyecto desarrollado en el punto anterior con el proyecto de frontend de
 lista de tareas trabajado en el módulo de react.
 
-### Librerías y herramientas utilizadas 📚🛠️
+## Librerías y herramientas utilizadas 📚🛠️
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/es/)
 - [MongoDB](https://www.mongodb.com/)
 - [Mongoose](https://mongoosejs.com/)
 
-### Repositorio Frontend
+## Repositorio Frontend
 - [Github](https://github.com/lucasecapdevila/react-tp1-ejercicio5)
 
-### Link de Deploy Frontend 🌐
+## Link de Deploy Frontend 🌐
 - [Netlify](https://lucasecapdevila-tpn5react76i.netlify.app/)
 
+## Autor 👷‍♂️
+- Capdevila Lucas
